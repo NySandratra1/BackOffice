@@ -1,0 +1,17 @@
+/* Statistique.css */
+
+.statistique-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Ajustez la marge selon vos besoins */
+  }
+  
+  .chart-title {
+    margin-bottom: 10px; /* Ajustez la marge selon vos besoins */
+  }
+  
+  .chart-container {
+    width: 60%;
+  }
+  
