@@ -4,14 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 
 function LoginPage() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('admin');
+  const [password, setPassword] = useState('admin');
   const [error, setError] = useState('');
   const navigate = useNavigate(); // Move useNavigate outside the component
 
   const handleLogin = () => {
     // Make an HTTP request to your authentication web service
-    axios.post('http://localhost:8080/annonce/signinadmin', { mail : username, motDePasse : password })
+    axios.post('http://annoncevoiture-production.up.railway.app/annonce/signinadmin', { mail : username, motDePasse : password })
       .then(response => {
         console.log(response);
         if (response) {
