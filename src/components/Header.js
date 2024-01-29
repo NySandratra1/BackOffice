@@ -14,7 +14,7 @@ const Header = ({ history, handleSubmit }) => {
         <nav>
           <ul className="nav-list">
             <li className="nav-item">
-              <a href="/">Annonces</a>
+              <a href="/home">Annonces</a>
             </li>
             <li className="nav-item">
               <a href="/all">Ajout de detail </a>

@@ -52,7 +52,7 @@ const Home = () => {
       setLoading(false);
     }
   };
-  
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -62,6 +62,7 @@ const Home = () => {
 
 
   return (
+    
     <div className="container">
       <h1 className="heading">Listes des annonces a valider</h1>
     <table>
