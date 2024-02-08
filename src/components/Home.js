@@ -18,7 +18,7 @@ const Home = () => {
   const handleDelete = (id) => {
       try {
         setLoadingInsert(true);
-        axios.delete('http://annoncevoiture-production.up.railway.app/annonce/annonceaccepte', { data: { idAnnonce: id } });
+        axios.delete('https://annoncevoiture-production.up.railway.app/annonce/annonceaccepte', { data: { idAnnonce: id } });
         setLoadingInsert(false);
         fetchData();
       } catch (errorInsert) {
@@ -30,7 +30,7 @@ const Home = () => {
   const handleAdd = (id) => {
       try {
         setLoadingInsert(true);
-        axios.post('http://annoncevoiture-production.up.railway.app/annonce/annonceaccepte', { idAnnonce : id });
+        axios.post('https://annoncevoiture-production.up.railway.app/annonce/annonceaccepte', { idAnnonce : id });
         setLoadingInsert(false);
         fetchData();
       } catch (errorInsert) {
